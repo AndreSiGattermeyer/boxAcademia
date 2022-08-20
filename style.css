@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+/* Zerando Css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fundo da tela */
+
+html {
+    width: 100vw;
+    height: 100vh;
+    font-size: 62.5%;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background: linear-gradient(rgba(17, 17, 17, 0.8), rgba(20, 20, 20, 1)), url(./img/casal_malhando.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+}
+
+/* Menu - Header - NavBar*/
+
+header {
+    width: 100%;
+    height: 7vh;
+    background-color: rgba(22, 22, 22, 0.2);
+}
+    
+
+
+
+.menu-content {
+    text-transform: uppercase;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.8rem;
+    
+}
+
+.logo {
+    font-size: 1.8rem;
+    letter-spacing: 0.4rem;
+    color: #ccff33;
+    
+}
+
+.menu-content .list-itens {
+    display: flex;
+    list-style: none;
+    gap: 10px;  /* separa os itens da lista por pixel*/
+}
+
+.menu-content .list-itens a {
+    text-decoration: none;
+    color: white;
+    padding: 1.5rem;
+    transform: 2ms ease-in;
+    position: relative;
+}
+
+.menu-content .list-itens a:before {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 0px;
+    height: 1px;
+    background-color: #ccff33;
+    transition: all 1.5s ease;
+}
+
+.menu-content .list-itens a:hover:before {
+    width: 100%;
+}
+    
+
+/* Centro - Conteúdo Principal*/
+
+main {
+    height: 93vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.primary-text {
+    width: 850px;
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.second-text {
+    margin-bottom: 7rem;
+    font-size: 2rem;
+    color: rgb(165, 165, 165);
+    text-transform: uppercase;
+}
+
+
+
+/* Boões*/
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+.btns {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.btns button {
+    width: 250px;
+    height: 60px;
+    cursor: pointer;
+    border: 1px solid white;
+    color: white;
+    text-transform: uppercase;
+    background-color: transparent;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    border-radius: 20px;
+    position: relative;
+    transition: 1.5s;
+    
+}
+
+.btns button:hover a {
+    color: #ccff33;
+    border: none;
+}
+
+.btns button:before {
+    content: '';
+    border-radius: 20px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 0;
+    height: 60px;
+    background-color: rgb(61, 61, 61);
+    z-index: -1;
+    transition: 1s;
+}
+    
+
+.btns button:hover:before {
+    width: 100%;
+}
+
+
+
+
+
+/* SITE DOS PREÇOS DAS AULAS*/
+
+
+.planos  {
+    padding: 80px;
+    
+}
+
+h1 {
+    font-size: 70px;
+    letter-spacing: 0.4rem;
+    color: #ccff33;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 25px;
+    letter-spacing: 0.4rem;
+    text-transform: uppercase;
+}
+
+.preco {
+    padding: 85px;
+    padding-top: 5px;
+}
+
+
+
+.preco h3 {
+    color:#ccff33;
+    letter-spacing: 0.4rem;
+    text-transform: uppercase;
+    
+}
+
+p {
+    letter-spacing: 0.4rem;
+    font-size: x-large;
+    font-weight: bold;
+    text-transform: uppercase;
+    color:#ccff33;
+}
+
+
+
+.lista_um {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding: 0 8em;
+    
+    
+}
+
+.lista_um h2 {
+    font-size: 25px;
+    letter-spacing: 0.4rem;
+    text-transform: uppercase;
+}
+
+.lista_um li {
+   padding: 10px;
+   
+   
+    
+}
+
+.lista_um li p {
+    line-height: 80%;
+    font-size: 14px;
+    letter-spacing: 0.4rem;
+    text-transform: uppercase;
+    margin-right: 20px;
+    
+    
+}
+
+
+
+p {
+    display: inline-block;
+    margin-left: 8px;
+}
+
+
+.free_pass {
+    padding: 80px;
+    padding-top: 5px;
+    text-transform: uppercase;
+    
+}
+
+.free {
+    font-size: 45px;
+}
+
+.gympass {
+  display: flex;
+  margin-left: 700px;
+  margin-top: -330px;
+  gap: 30px;
+  
+}
+
+.gympass h2 {
+    position: absolute;
+    top: 320px;
+    
+    font-size: 18px;
+}
+
+.gympass img {
+    
+    width: 330px;
+    
+}
+
+.pass {
+    color:#fff;
+}
+
+
+
+/*  AGENDA*/
+
+.hora {
+    position:relative;
+    margin: 0 800px -80px 0;;
+}
+
+.hora h2 {
+    font-size: 3.5rem;
+    color: #ccff33;
+    letter-spacing: 0.4rem;
+    margin-bottom: 15px;
+}
+
+.turno {
+    font-size: 1.5rem;
+    letter-spacing: 0.4rem;
+    margin-right: 50px;
+    color: #fff;
+}
+    
+
+span {
+    
+    font-weight: bold;
+    color: #ccff33;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    letter-spacing: 0.8rem;
+}
+
+td {
+    
+    height: 30px;
+}
+tr {
+    
+    height: 60px;
+}
+
+
+/*------- Seção Fotos-------*/
+
+.gallery {
+    height: 99%;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns:repeat(8, 1fr);
+    grid-template-rows: 8, 10vw;
+    grid-gap: 0px;
+    
+}
+
+
+.gallery img {
+    width: 70%;
+    height: 80%;
+    object-fit: cover;
+    padding-top: 50px;
+}
+
+.gallery_item--1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    padding: 90px 0px 0px 70px;
+}
+
+
+img {
+    
+	max-width: 100%;
+	-moz-transition: all 0.2s;
+	-webkit-transition: all 0.2s;
+	transition: all 0.2s;
+}
+    
+    
+
+img:hover {
+    -moz-transform: scale(1.6);
+	-webkit-transform: scale(1.6);
+	transform: scale(1.6);
+}  
+
+.gallery img {
+    width: 70%;
+    height: 80%;
+    object-fit: cover;
+    padding-top: 50px;
+}
+
+video{
+    padding-top: 50px;
+	max-width: 70%;
+	-moz-transition: all 0.2s;
+	-webkit-transition: all 0.2s;
+	transition: all 0.2s;
+}
+    
+video:hover {
+    -moz-transform: scale(1.6);
+	-webkit-transform: scale(1.6);
+	transform: scale(1.6);
+}   
+    
+   
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+    
